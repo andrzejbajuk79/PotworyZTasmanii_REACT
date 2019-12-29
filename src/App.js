@@ -13,7 +13,7 @@ class App extends Component {
 		//bind wskazuje do ktoer THIS sie odnosimy w funkcji
 		// this.handleChange = this.handleChange.bind(this);
 	}
-	handleChange = (e) => {
+	handleChange = e => {
 		this.setState({ searchField: e.target.value.toLowerCase() });
 	};
 	componentDidMount() {
@@ -30,7 +30,7 @@ class App extends Component {
 
 		return (
 			<div className="App">
-				<h1>Potwory  z Tasmanii</h1>
+				<h1>Potwory Z Tasmanii</h1>
 				<SearchBox
 					placeholder="search monster"
 					handleChange={this.handleChange}
